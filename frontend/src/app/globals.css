@@ -1,0 +1,286 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-paper: var(--paper);
+  /* Public website palette — unified Fernway Green */
+  --color-flame: #059669;
+  --color-ember: #065f46;
+  --color-amber: #34d399;
+  --color-amber-soft: #ecfdf5;
+  --color-navy: #141c19;
+  --color-navy-deep: #0e1412;
+  --color-beige: #eef5f1;
+  --color-beige-deep: #e1ece6;
+  --color-stone: #64746e;
+  --color-stone-light: #93a39c;
+  --font-dm: var(--font-dm-sans);
+  --font-body: var(--font-manrope);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-ink: var(--ink);
+  --color-brass: var(--brass);
+  --color-credit: var(--credit);
+  --color-debit: var(--debit);
+  --color-pending: var(--pending);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-manrope);
+  --font-heading: var(--font-dm-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Fernway brand: executive forest & emerald green on crisp paper surfaces. */
+  --paper: #f5f8f6;
+  --ink: #141c19;
+  --brass: #10b981;
+  --credit: #059669;
+  --debit: #b42318;
+  --pending: #9a6a12;
+  /* Deep forest green panels (balance, cards, receipts) in both themes. */
+  --brand: #065f46;
+  --brand-foreground: #ffffff;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --secondary: #e8f5ee;
+  --secondary-foreground: #141c19;
+  --muted: #edf4f0;
+  --muted-foreground: #64746e;
+  --accent: #e8f5ee;
+  --accent-foreground: #141c19;
+  --destructive: #b42318;
+  --border: #d7e5dd;
+  --input: #c8dcd1;
+  --ring: #059669;
+  /* Validated categorical pair (dataviz validator, light surface #ffffff). */
+  --chart-1: #059669;
+  --chart-2: #0f766e;
+  --chart-3: #34d399;
+  --chart-4: #065f46;
+  --chart-5: #b8cdc2;
+  --radius: 0.3rem;
+  --sidebar: #111916;
+  --sidebar-foreground: #c4d0ca;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #111916;
+  --sidebar-accent: #1c2823;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1c2823;
+  --sidebar-ring: #34d399;
+}
+
+/* Dark theme: deep pine-black surfaces with luminous emerald accents. */
+.dark {
+  --paper: #0e1311;
+  --brass: #34d399;
+  --credit: #34d399;
+  --debit: #f0707c;
+  --pending: #e0b25a;
+  --brand: #064e3b;
+  --brand-foreground: #ffffff;
+
+  --background: var(--paper);
+  --foreground: #e9efec;
+  --card: #151c19;
+  --card-foreground: #e9efec;
+  --popover: #1a231f;
+  --popover-foreground: #e9efec;
+  --primary: #10b981;
+  --primary-foreground: #03261a;
+  --secondary: #1e2924;
+  --secondary-foreground: #dce7e1;
+  --muted: #1a231f;
+  --muted-foreground: #92a39b;
+  --accent: #1e2924;
+  --accent-foreground: #e9efec;
+  --destructive: #f0707c;
+  --border: #25322c;
+  --input: #2d3d36;
+  --ring: #34d399;
+  /* Validated categorical pair (dataviz validator, dark surface #151c19). */
+  --chart-1: #10b981;
+  --chart-2: #14b8a6;
+  --chart-3: #34d399;
+  --chart-4: #6ee7b7;
+  --chart-5: #33433b;
+  --sidebar: #090d0b;
+  --sidebar-foreground: #c4d0ca;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #090d0b;
+  --sidebar-accent: #151f1b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #151f1b;
+  --sidebar-ring: #34d399;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html {
+    @apply font-sans;
+    font-variant-numeric: lining-nums;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-dm-sans);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Unified Fernway Green brand gradient. */
+@utility bg-brand-gradient {
+  background-image: linear-gradient(90deg, #065f46 0%, #059669 100%);
+}
+
+@utility site-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-inline: 15px;
+}
+
+@utility site-container-wide {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1920px;
+  padding-inline: 50px;
+  @media (width < 64rem) {
+    padding-inline: 15px;
+  }
+}
+
+/* Sections rise into place as they enter the viewport. CSS-only; skipped for reduced motion. */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility reveal {
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
+
+/* Slow zoom on the active hero photo. */
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@utility animate-ken-burns {
+  @media (prefers-reduced-motion: no-preference) {
+    animation: ken-burns 9s ease-out both;
+  }
+}
+
+/* Hero slide progress bar fill. */
+@keyframes progress-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Headings and money figures: Manrope, tight tracking, tabular digits. */
+@utility font-figure {
+  font-family: var(--font-dm-sans);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+@utility bg-vault-gradient {
+  background: linear-gradient(90deg, #065f46 0%, #059669 100%);
+}
+
+@utility bg-vault-glow {
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--primary, #059669) 15%, transparent) 0%, transparent 70%);
+}
+
+@keyframes guilloche-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.guilloche-ring {
+  stroke-dasharray: 1;
+  animation: guilloche-draw 2.6s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guilloche-ring {
+    animation: none;
+  }
+}

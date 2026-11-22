@@ -1,0 +1,21 @@
+# OS / editors
+.DS_Store
+*.swp
+
+# Environment files (the frontend has its own .gitignore too)
+.env
+.env.*
+!.env.example
+
+# Python (backend)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+db.sqlite3
+
+# Personal Claude Code settings
+.claude/settings.local.json
+
+# Local PostgreSQL cluster for development
+frontend/.data/

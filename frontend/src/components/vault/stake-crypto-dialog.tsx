@@ -196,7 +196,7 @@ export function StakeCryptoDialog({
           </div>
           <div className="flex items-center justify-between text-muted-foreground">
             <span>Protocol Gas Fee</span>
-            <span className="font-semibold text-emerald-500">Free (Covered by Fernway)</span>
+            <span className="font-semibold text-emerald-500">Free (Covered by Lindenway)</span>
           </div>
         </div>
 

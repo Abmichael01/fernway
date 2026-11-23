@@ -1,6 +1,6 @@
 /** Navigation and product constants for Fernway Invest. */
 export const investConfig = {
-  name: "Fernway Invest",
+  name: "Lindenway Invest",
   signInPath: "/invest/sign-in",
   homePath: "/invest",
 } as const;
@@ -17,7 +17,7 @@ export type InvestNavItem = (typeof investNavItems)[number];
 export type InvestNavIcon = InvestNavItem["icon"];
 
 export const INVEST_DISCLOSURE =
-  "Fernway Invest is run by Fernway, a financial technology company. Fernway is not a bank, broker-dealer or registered investment adviser. Crypto is not FDIC- or SIPC-insured and can lose some or all of its value. Managed portfolios are fixed mixes of coins chosen by Fernway; their value follows market prices and no return is promised.";
+  "Lindenway Invest is run by Lindenway, a financial technology company. Lindenway is not a bank, broker-dealer or registered investment adviser. Crypto is not FDIC- or SIPC-insured and can lose some or all of its value. Managed portfolios are fixed mixes of coins chosen by Lindenway; their value follows market prices and no return is promised.";
 
 export const PORTFOLIO_NOTE =
   "No return is promised. The value of this portfolio moves with the market prices of its coins and can fall.";

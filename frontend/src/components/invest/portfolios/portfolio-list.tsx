@@ -12,7 +12,7 @@ export function PortfolioList() {
 
   return (
     <div className="flex flex-col gap-6">
-      <PageHeader title="Portfolios" description="Fixed mixes of coins chosen by Fernway. Their value follows market prices." />
+      <PageHeader title="Portfolios" description="Fixed mixes of coins chosen by Lindenway. Their value follows market prices." />
       {isError ? (
         <QueryError message="We couldn't load the portfolios." onRetry={() => void refetch()} />
       ) : isPending ? (

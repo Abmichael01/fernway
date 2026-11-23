@@ -10,16 +10,39 @@ import { Highlights } from "@/components/site/home/highlights";
 import { RatesBoard } from "@/components/site/home/rates-board";
 import { ServiceRequests } from "@/components/site/home/service-requests";
 import { SloganBanner } from "@/components/site/home/slogan-banner";
-import { siteConfig } from "@/config/site";
+import { SiteStructuredData } from "@/components/site/seo/structured-data";
+import { defaultOgImage, siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: { absolute: `${siteConfig.name} · Online Banking, Cards & Transfers` },
-  description: "Online banking with a physical debit card and simple bank transfers in one account.",
+  title: { absolute: `${siteConfig.legalName} | Online Banking, High-Yield Savings & Debit Cards` },
+  description:
+    "Bank online with Lindenway Bank at lindenwaybank.com. Earn 4.10% APY on high-yield savings, send $0 standard ACH transfers, and control your physical Visa debit card.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.legalName,
+    url: siteConfig.url,
+    title: `${siteConfig.legalName} | Online Banking, High-Yield Savings & Debit Cards`,
+    description:
+      "Bank online with Lindenway Bank at lindenwaybank.com. Earn 4.10% APY on high-yield savings, send $0 standard ACH transfers, and control your physical Visa debit card.",
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.legalName} | Online Banking, High-Yield Savings & Debit Cards`,
+    description:
+      "Bank online with Lindenway Bank at lindenwaybank.com. Earn 4.10% APY on high-yield savings, send $0 standard ACH transfers, and control your physical Visa debit card.",
+    images: [defaultOgImage.url],
+  },
 };
 
 export default function HomePage() {
   return (
     <>
+      <SiteStructuredData />
       <HeroSlider />
       <Highlights />
       <BetterTomorrow />

@@ -107,7 +107,7 @@ export function VaultHeader({
             </span>
             <div className="flex flex-col">
               <span className="font-heading text-lg font-bold tracking-tight text-foreground">
-                Fernway <span className="text-primary">Vault</span>
+                Lindenway <span className="text-primary">Vault</span>
               </span>
               <span className="hidden text-[10px] font-medium tracking-wide text-muted-foreground uppercase sm:block">
                 Trust Multi-Chain
@@ -221,7 +221,7 @@ export function VaultHeader({
               <DropdownMenuItem asChild>
                 <Link href="/overview" className="flex items-center gap-2 text-xs">
                   <Layers className="size-3.5" />
-                  <span>Go to Fernway Banking</span>
+                  <span>Go to Lindenway Banking</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>

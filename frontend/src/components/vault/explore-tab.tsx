@@ -25,7 +25,7 @@ export function ExploreTab({ evmAddress }: { evmAddress: string }) {
 
   const handleConnectDapp = (dapp: (typeof POPULAR_DAPPS)[0]) => {
     setActiveDapp(dapp);
-    toast.success(`Connected Fernway Vault to ${dapp.name}`);
+    toast.success(`Connected Lindenway Vault to ${dapp.name}`);
   };
 
   return (
@@ -38,7 +38,7 @@ export function ExploreTab({ evmAddress }: { evmAddress: string }) {
             Explore Decentralized Apps
           </h3>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Connect your self-custody Fernway Vault wallet seamlessly to decentralized exchanges, NFT markets, and lending protocols across Ethereum, Solana and BNB Chain.
+            Connect your self-custody Lindenway Vault wallet seamlessly to decentralized exchanges, NFT markets, and lending protocols across Ethereum, Solana and BNB Chain.
           </p>
         </div>
       </div>

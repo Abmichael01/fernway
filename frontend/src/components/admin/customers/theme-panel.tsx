@@ -53,7 +53,7 @@ export function ThemePanel({ customer }: ThemePanelProps) {
           </h3>
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed max-w-2xl">
-          Choose which visual color theme this customer experiences across both Fernway Banking and Fernway Vault. Selected theme applies dynamically across all their sessions.
+          Choose which visual color theme this customer experiences across both Lindenway Banking and Lindenway Vault. Selected theme applies dynamically across all their sessions.
         </p>
       </div>
 

@@ -30,7 +30,7 @@ export function SignInForm() {
         message:
           error instanceof ApiError
             ? error.message
-            : "We couldn't reach Fernway. Check your connection and try again.",
+            : "We couldn't reach Lindenway. Check your connection and try again.",
       });
     }
   });

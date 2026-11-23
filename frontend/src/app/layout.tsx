@@ -15,18 +15,77 @@ const dmSans = DM_Sans({
   weight: ["400", "500", "700"],
 });
 
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION?.trim();
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.legalName,
   title: {
-    default: siteConfig.name,
-    template: `%s · ${siteConfig.name}`,
+    default: `${siteConfig.legalName} — Online Banking, High-Yield Savings & Debit Cards`,
+    template: `%s | ${siteConfig.legalName}`,
   },
   description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.legalName, url: siteConfig.url }],
+  creator: siteConfig.legalName,
+  publisher: siteConfig.legalName,
+  category: "finance",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.legalName,
+    title: `${siteConfig.legalName} — Online Banking, High-Yield Savings & Debit Cards`,
+    description: siteConfig.description,
+    images: [
+      {
+        url: "/og-image",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.legalName} — Online Banking, High-Yield Savings & Debit Cards`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.legalName} — Online Banking, High-Yield Savings & Debit Cards`,
+    description: siteConfig.description,
+    images: ["/og-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  ...(googleVerification || bingVerification
+    ? {
+        verification: {
+          ...(googleVerification ? { google: googleVerification } : {}),
+          ...(bingVerification ? { other: { "msvalidate.01": bingVerification } } : {}),
+        },
+      }
+    : {}),
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f8f6" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e1311" },
+    { media: "(prefers-color-scheme: light)", color: "#059669" },
+    { media: "(prefers-color-scheme: dark)", color: "#0d231c" },
   ],
 };
 

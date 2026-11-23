@@ -16,7 +16,7 @@ const TABS = [
 export function InvestAdminNav() {
   const pathname = usePathname();
   return (
-    <nav aria-label="Fernway Invest" className="-mx-4 flex gap-1 overflow-x-auto border-b px-4 sm:mx-0 sm:px-0">
+    <nav aria-label="Lindenway Invest" className="-mx-4 flex gap-1 overflow-x-auto border-b px-4 sm:mx-0 sm:px-0">
       {TABS.map((tab) => {
         const active = tab.href === "/admin/invest" ? pathname === tab.href : pathname.startsWith(tab.href);
         return (

@@ -32,7 +32,7 @@ export function InvestSignInForm() {
         if (password) form.setError("password", { message: password });
         if (!email && !password) form.setError("root", { message: error.message });
       } else {
-        form.setError("root", { message: "We couldn't reach Fernway Invest. Check your connection and try again." });
+        form.setError("root", { message: "We couldn't reach Lindenway Invest. Check your connection and try again." });
       }
     }
   });

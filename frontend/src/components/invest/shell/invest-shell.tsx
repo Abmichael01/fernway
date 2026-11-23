@@ -32,7 +32,7 @@ export function InvestShell({ children }: { children: ReactNode }) {
   if (me.isError) {
     return (
       <div className="mx-auto flex min-h-dvh max-w-md items-center px-4">
-        <QueryError message="We couldn't reach Fernway Invest." onRetry={() => void me.refetch()} className="w-full" />
+        <QueryError message="We couldn't reach Lindenway Invest." onRetry={() => void me.refetch()} className="w-full" />
       </div>
     );
   }
@@ -69,7 +69,7 @@ export function InvestShell({ children }: { children: ReactNode }) {
 
 function ShellSkeleton() {
   return (
-    <div className="min-h-dvh" aria-busy="true" aria-label="Loading Fernway Invest">
+    <div className="min-h-dvh" aria-busy="true" aria-label="Loading Lindenway Invest">
       <div className="flex h-14 items-center gap-3 border-b px-4 sm:px-6">
         <Skeleton className="size-8" />
         <Skeleton className="h-5 w-32" />

@@ -3,9 +3,33 @@ import { SecurityAdvisoryDialog } from "@/components/auth/sign-in/security-advis
 import { SignInForm } from "@/components/auth/sign-in/sign-in-form";
 import { QuickLoginHelper } from "@/components/auth/quick-login-helper";
 import { LOCAL_QUICK_SIGN_IN } from "@/config/features";
-import { siteConfig } from "@/config/site";
+import { defaultOgImage, siteConfig } from "@/config/site";
 
-export const metadata: Metadata = { title: "Sign in" };
+export const metadata: Metadata = {
+  title: "Sign In to Online Banking",
+  description:
+    "Sign in securely to your Lindenway Bank online banking account at lindenwaybank.com to manage balances, transfers, and your physical Visa debit card.",
+  alternates: {
+    canonical: "/sign-in",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.legalName,
+    url: `${siteConfig.url}/sign-in`,
+    title: `Sign In to Online Banking | ${siteConfig.legalName}`,
+    description:
+      "Access your Lindenway Bank online banking portal securely at lindenwaybank.com.",
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Sign In to Online Banking | ${siteConfig.legalName}`,
+    description:
+      "Access your Lindenway Bank online banking portal securely at lindenwaybank.com.",
+    images: [defaultOgImage.url],
+  },
+};
 
 export default function SignInPage() {
   return (

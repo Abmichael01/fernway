@@ -20,7 +20,7 @@ export function InvestOverview() {
 
   return (
     <div className="flex flex-col gap-8">
-      <PageHeader title="Fernway Invest" description="Customers, portfolios and payouts for the investing app." />
+      <PageHeader title="Lindenway Invest" description="Customers, portfolios and payouts for the investing app." />
 
       {stats.isError ? (
         <QueryError message="We couldn't load the totals." onRetry={() => void stats.refetch()} />

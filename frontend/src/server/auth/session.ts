@@ -112,7 +112,7 @@ export async function getSessionUser(): Promise<UserRow | null> {
     return {
       id: "preview-user",
       role: "customer",
-      email: preview.email || "alexander@fernwaybank.com",
+      email: preview.email || "alexander@lindenwaybank.com",
       passwordHash: "",
       firstName: preview.firstName || "Alexander",
       lastName: preview.lastName || "Hamilton",
@@ -203,7 +203,7 @@ export async function getSessionUser(): Promise<UserRow | null> {
     return {
       id: "preview-user",
       role: "customer",
-      email: preview.email || "alexander@fernwaybank.com",
+      email: preview.email || "alexander@lindenwaybank.com",
       passwordHash: "",
       firstName: preview.firstName || "Alexander",
       lastName: preview.lastName || "Hamilton",

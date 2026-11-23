@@ -59,6 +59,16 @@ export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   const pathname = url.pathname;
 
+  // Canonical host 301 redirect: consolidate www.lindenwaybank.com -> https://lindenwaybank.com for SEO.
+  const requestHost = (
+    request.headers.get("x-forwarded-host")?.split(",")[0]?.trim() ||
+    request.headers.get("host")?.trim() ||
+    ""
+  ).toLowerCase();
+  if (requestHost === "www.lindenwaybank.com") {
+    return NextResponse.redirect(new URL(`${pathname}${url.search}`, "https://lindenwaybank.com"), 301);
+  }
+
   const invest = investGate(request, url);
   if (invest) return invest;
 
@@ -170,6 +180,8 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     "/",
+    "/sign-in",
+    "/sign-in/:path*",
     "/overview/:path*",
     "/transactions/:path*",
     "/transfers/:path*",

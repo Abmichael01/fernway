@@ -58,7 +58,7 @@ export function CreateCardDialog({ open, onOpenChange }: CreateCardDialogProps) 
   const [customLimit, setCustomLimit] = useState("");
 
   const effectiveAccountId = selectedAccountId || primaryAccount?.id || "";
-  const holderName = user ? `${user.firstName} ${user.lastName}`.toUpperCase() : "FERNWAY MEMBER";
+  const holderName = user ? `${user.firstName} ${user.lastName}`.toUpperCase() : "LINDENWAY MEMBER";
 
   const handleCreateCard = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -116,7 +116,7 @@ export function CreateCardDialog({ open, onOpenChange }: CreateCardDialogProps) 
             <div className="absolute inset-0 bg-[radial-gradient(130%_150%_at_0%_0%,#343846_0%,#1a1c23_48%,#0b0c10_100%)]" />
             <div className="relative z-10 flex flex-col justify-between h-36">
               <div className="flex items-center justify-between">
-                <span className="font-heading text-sm font-extrabold tracking-wider">FERNWAY</span>
+                <span className="font-heading text-sm font-extrabold tracking-wider">LINDENWAY</span>
                 <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider backdrop-blur-xs">
                   Physical Debit
                 </span>

@@ -131,7 +131,7 @@ export const STAKING_OPTIONS: VaultStakingOption[] = [
     apyPercent: 3.65,
     lockupDays: 0,
     minAmount: 0.01,
-    validator: "Lido / Fernway Node",
+    validator: "Lido / Lindenway Node",
   },
   {
     symbol: "BNB",

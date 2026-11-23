@@ -225,8 +225,8 @@ export function SupportWidget() {
                     {view === "thread"
                       ? realtimeEnabled
                         ? "Live conversation"
-                        : "Fernway banking support"
-                      : "Help with your Fernway account"}
+                        : "Lindenway banking support"
+                      : "Help with your Lindenway account"}
                   </span>
                 </p>
               </div>
@@ -398,7 +398,7 @@ export function SupportWidget() {
               <div>
                 <h2 className="font-heading text-lg font-semibold">How can we help?</h2>
                 <p className="mt-1 text-xs leading-5 text-muted-foreground">
-                  Start a live conversation with Fernway banking support.
+                  Start a live conversation with Lindenway banking support.
                 </p>
               </div>
 

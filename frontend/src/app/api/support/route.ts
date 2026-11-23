@@ -39,7 +39,7 @@ export async function POST(request: Request) {
   if (!token) {
     if (preview) {
       return NextResponse.json(
-        { detail: "Create your Fernway account first to start live support conversations." },
+        { detail: "Create your Lindenway account first to start live support conversations." },
         { status: 400 },
       );
     }

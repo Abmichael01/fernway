@@ -49,7 +49,7 @@ export function SecurityAdvisoryDialog() {
           className="inline-flex cursor-pointer items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
         >
           <ShieldAlert className="size-3.5 text-primary" />
-          <span>Security notice · Verify you&apos;re on fernwaybank.com</span>
+          <span>Security notice · Verify you&apos;re on lindenwaybank.com</span>
         </button>
       </div>
 
@@ -68,7 +68,7 @@ export function SecurityAdvisoryDialog() {
               Stay safe from fake websites
             </DialogTitle>
             <DialogDescription className="pt-1 text-sm leading-relaxed text-muted-foreground">
-              Before signing in, confirm you are on the genuine Fernway Online Banking portal.
+              Before signing in, confirm you are on the genuine Lindenway Online Banking portal.
             </DialogDescription>
           </DialogHeader>
 
@@ -79,7 +79,7 @@ export function SecurityAdvisoryDialog() {
                 <strong className="font-semibold text-foreground">Check the address bar:</strong>{" "}
                 Always verify the URL is{" "}
                 <span className="rounded bg-primary/12 px-1.5 py-0.5 font-mono font-semibold text-primary">
-                  fernwaybank.com
+                  lindenwaybank.com
                 </span>{" "}
                 with a secure <span className="font-mono">https://</span> connection.
               </span>
@@ -95,7 +95,7 @@ export function SecurityAdvisoryDialog() {
               <KeyRound className="mt-0.5 size-4 shrink-0 text-primary" />
               <span>
                 <strong className="font-semibold text-foreground">Protect your credentials:</strong>{" "}
-                Fernway staff will never ask for your password, 4-digit transaction PIN, or email verification code.
+                Lindenway staff will never ask for your password, 4-digit transaction PIN, or email verification code.
               </span>
             </li>
           </ul>

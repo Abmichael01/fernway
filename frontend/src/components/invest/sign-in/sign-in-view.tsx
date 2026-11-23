@@ -31,9 +31,9 @@ export function InvestSignInView() {
         <main className="flex flex-1 items-center justify-center px-4 pb-10 sm:px-6">
           <div className="flex w-full max-w-sm flex-col gap-8">
             <div className="flex flex-col gap-2">
-              <h1 className="font-heading text-2xl font-bold tracking-tight">Sign in to Fernway Invest</h1>
+              <h1 className="font-heading text-2xl font-bold tracking-tight">Sign in to Lindenway Invest</h1>
               <p className="text-sm text-muted-foreground">
-                Fernway Invest is invitation only. Your account is set up by the Fernway team.
+                Lindenway Invest is invitation only. Your account is set up by the Lindenway team.
               </p>
             </div>
             {LOCAL_QUICK_SIGN_IN && <InvestQuickLoginHelper />}

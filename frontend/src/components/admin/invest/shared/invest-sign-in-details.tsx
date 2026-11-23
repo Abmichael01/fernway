@@ -13,7 +13,7 @@ interface Props {
 export function InvestSignInDetails({ name, email, password }: Props) {
   const signInUrl = typeof window === "undefined" ? "/invest/sign-in" : `${window.location.origin}/invest/sign-in`;
   const message = [
-    `Hi ${name}, your Fernway Invest account is ready.`,
+    `Hi ${name}, your Lindenway Invest account is ready.`,
     "",
     `Sign in: ${signInUrl}`,
     `Email: ${email}`,

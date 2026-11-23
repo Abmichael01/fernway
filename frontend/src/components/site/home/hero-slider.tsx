@@ -12,16 +12,19 @@ import { TrianglePattern } from "@/components/shared/triangle-pattern";
 const slides = [
   {
     image: "/images/site/gen/hero-card.png",
+    alt: "Lindenway Bank physical Visa debit card and online banking account",
     title: "A Smarter Way to Spend, Save and Invest",
-    text: "Checking, high-yield savings and crypto in one account, built around the way you manage money.",
+    text: "Checking, high-yield savings and transfers in one Lindenway Bank account, built around the way you manage money.",
   },
   {
     image: "/images/site/hero-handover.jpg",
+    alt: "Lindenway Bank high-yield savings account earning competitive annual yield",
     title: `Earn ${savingsApy} APY¹ on Every Dollar You Save`,
     text: "Grow your savings with a competitive rate and move money to checking instantly whenever you need it.",
   },
   {
     image: "/images/site/hero-online.jpg",
+    alt: "Lindenway Bank fast same-day ACH transfers and mobile card controls",
     title: "Money That Moves as Fast as You Do",
     text: "Send money the same business day, freeze your card in one tap and see every payment as it happens.",
   },
@@ -64,7 +67,7 @@ export function HeroSlider() {
           >
             <Image
               src={slide.image}
-              alt=""
+              alt={slide.alt}
               fill
               priority={slideIndex === 0}
               sizes="(min-width: 1440px) 1340px, 100vw"
@@ -80,9 +83,15 @@ export function HeroSlider() {
                   slideIndex === index && "animate-in fade-in slide-in-from-bottom-8 duration-700 motion-reduce:animate-none",
                 )}
               >
-                <h2 className="font-dm text-4xl leading-tight font-medium text-white sm:text-5xl lg:text-[60px] lg:leading-[72px]">
-                  {slide.title}
-                </h2>
+                {slideIndex === 0 ? (
+                  <h1 className="font-dm text-4xl leading-tight font-medium text-white sm:text-5xl lg:text-[60px] lg:leading-[72px]">
+                    {slide.title}
+                  </h1>
+                ) : (
+                  <h2 className="font-dm text-4xl leading-tight font-medium text-white sm:text-5xl lg:text-[60px] lg:leading-[72px]">
+                    {slide.title}
+                  </h2>
+                )}
                 <p className="mt-6 max-w-xl font-body text-lg text-white/80">{slide.text}</p>
                 <Link
                   href="/sign-in"

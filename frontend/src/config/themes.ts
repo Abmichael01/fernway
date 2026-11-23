@@ -11,7 +11,7 @@ export interface AppTheme {
 
 export const FERNWAY_GREEN_THEME: AppTheme = {
   id: "emerald-forest",
-  name: "Fernway Green",
+  name: "Lindenway Green",
   tagline: "Unified private banking emerald and forest green",
   primary: "#059669",
   brand: "#065f46",

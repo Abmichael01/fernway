@@ -101,7 +101,7 @@ export function SiteHeader() {
                 <Megaphone className="size-5" aria-hidden="true" />
                 Updates:
               </span>
-              <span className="truncate text-white/85">Earn {savingsApy} APY¹ on High-Yield Savings with Fernway</span>
+              <span className="truncate text-white/85">Earn {savingsApy} APY¹ on High-Yield Savings with Lindenway</span>
               <Link href="/#rates" className="flex shrink-0 items-center gap-1 font-dm text-lg font-medium hover:underline">
                 <ChevronRight className="size-4" aria-hidden="true" />
                 More Details

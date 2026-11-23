@@ -360,7 +360,7 @@ export async function cardsForUser(userId: string, now = new Date()): Promise<Pa
     return {
       id: "preview-card",
       accountId: "preview-account",
-      label: "Fernway Physical Debit Card",
+      label: "Lindenway Physical Debit Card",
       kind: "physical",
       brand: "visa",
       cardNumber: number,

@@ -67,7 +67,7 @@ export function GrowWealth() {
                 <article className="group pr-[30px]">
                   <div className="relative">
                     <div className="relative aspect-[341/350] w-full overflow-hidden">
-                      <Image src={item.image} alt="" fill sizes="(min-width: 1024px) 341px, 80vw" className="object-cover saturate-[0.85] transition duration-700 group-hover:scale-105 group-hover:saturate-100" />
+                      <Image src={item.image} alt={`Lindenway Bank ${item.title}`} fill sizes="(min-width: 1024px) 341px, 80vw" className="object-cover saturate-[0.85] transition duration-700 group-hover:scale-105 group-hover:saturate-100" />
                     </div>
                     <Link
                       href="/sign-in"

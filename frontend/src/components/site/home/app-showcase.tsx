@@ -25,7 +25,7 @@ export function AppShowcase() {
         <div>
           <SectionTitle
             title="All Your Money, In One App"
-            subtitle="Everything you can do at Fernway, from managing cards to sending transfers, sits one tap from your balance."
+            subtitle="Everything you can do at Lindenway, from managing cards to sending transfers, sits one tap from your balance."
             align="left"
           />
           <ul className="reveal mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">

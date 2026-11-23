@@ -74,11 +74,11 @@ export function AppSidebar() {
             <SidebarGroupContent>
               <SidebarMenu>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild size="lg" tooltip="Fernway Vault">
+                  <SidebarMenuButton asChild size="lg" tooltip="Lindenway Vault">
                     <Link href="/vault" className="flex items-center justify-between">
                       <span className="flex items-center gap-2">
                         <ShieldCheck className="size-4 text-[#0B63F6]" />
-                        <span>Fernway Vault</span>
+                        <span>Lindenway Vault</span>
                       </span>
                       <span className="rounded-full bg-[#0B63F6]/15 px-1.5 py-0.5 text-[10px] font-bold text-[#0B63F6]">
                         Web3

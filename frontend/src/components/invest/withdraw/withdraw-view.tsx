@@ -20,7 +20,7 @@ export function WithdrawView() {
           <CardHeader>
             <CardTitle className="font-heading text-base font-semibold">Request a withdrawal</CardTitle>
             <CardDescription>
-              A Fernway team member sends your payment by hand. The amount is held from your cash until it&apos;s paid or declined; if it&apos;s declined, the money comes back to your cash.
+              A Lindenway team member sends your payment by hand. The amount is held from your cash until it&apos;s paid or declined; if it&apos;s declined, the money comes back to your cash.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-5">

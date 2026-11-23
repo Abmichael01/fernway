@@ -53,7 +53,7 @@ export function ServiceRequests() {
   return (
     <section id="support" className="scroll-mt-6 bg-beige py-[100px]">
       <div className="site-container">
-        <SectionTitle title="Service Requests" subtitle="Everything you can do yourself in the Fernway app." />
+        <SectionTitle title="Service Requests" subtitle="Everything you can do yourself in the Lindenway app." />
 
         <div className="relative mt-14 lg:px-[-80px]">
           <button
@@ -129,7 +129,7 @@ export function ServiceRequests() {
                 </SupportEmailLink>
               </div>
               <div className="relative hidden sm:block">
-                <Image src="/images/site/support-agent.jpg" alt="" fill sizes="285px" className="object-cover" />
+                <Image src="/images/site/support-agent.jpg" alt="Lindenway Bank customer support team member" fill sizes="285px" className="object-cover" />
                 <span
                   aria-hidden="true"
                   className="absolute inset-y-0 -left-px w-16 bg-navy [clip-path:polygon(0_0,100%_0,0_50%,100%_100%,0_100%)]"

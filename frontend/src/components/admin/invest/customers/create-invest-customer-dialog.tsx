@@ -100,7 +100,7 @@ export function CreateInvestCustomerDialog({ children }: { children: ReactNode }
             <ResponsiveModalHeader className="border-b px-6 pt-6 pb-5">
               <ResponsiveModalTitle className="font-heading text-xl">New Invest customer</ResponsiveModalTitle>
               <ResponsiveModalDescription>
-                They sign in to Fernway Invest with this email and password. New accounts start with no cash.
+                They sign in to Lindenway Invest with this email and password. New accounts start with no cash.
               </ResponsiveModalDescription>
             </ResponsiveModalHeader>
             <form onSubmit={onSubmit} noValidate className="flex min-h-0 flex-1 flex-col">

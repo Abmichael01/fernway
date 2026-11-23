@@ -22,7 +22,7 @@ export function PortfolioCard({ portfolio }: { portfolio: Portfolio }) {
         </div>
       ) : (
         <div className="bg-brand-gradient/15 flex aspect-[16/9] w-full items-end p-4">
-          <span className="font-heading text-xs font-semibold tracking-wider text-muted-foreground uppercase">Fernway Invest</span>
+          <span className="font-heading text-xs font-semibold tracking-wider text-muted-foreground uppercase">Lindenway Invest</span>
         </div>
       )}
       <div className="flex flex-1 flex-col gap-3 p-5">

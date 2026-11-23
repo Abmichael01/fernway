@@ -23,7 +23,7 @@ export function DepositView() {
           ))}
         </div>
       ) : !data.open ? (
-        <EmptyState icon={<ArrowDownToLine />} title="Deposits aren't open yet" description="You'll be able to send crypto here once Fernway opens deposits." className="rounded-lg border border-dashed" />
+        <EmptyState icon={<ArrowDownToLine />} title="Deposits aren't open yet" description="You'll be able to send crypto here once Lindenway opens deposits." className="rounded-lg border border-dashed" />
       ) : (
         <>
           <div className="grid items-start gap-4 md:grid-cols-2">

@@ -48,7 +48,7 @@ export default function VaultSignInPage() {
               <ShieldCheck className="size-6" />
             </span>
             <h1 className="mt-4 font-heading text-2xl font-bold tracking-tight text-foreground">
-              Fernway <span className="text-primary">Vault</span>
+              Lindenway <span className="text-primary">Vault</span>
             </h1>
             <p className="mt-1 text-xs text-muted-foreground">
               Self-Custody Multi-Chain Web3 Gateway
@@ -130,7 +130,7 @@ export default function VaultSignInPage() {
               className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground"
             >
               <ArrowLeft className="size-3.5" />
-              <span>Back to Fernway Banking Sign-in</span>
+              <span>Back to Lindenway Banking Sign-in</span>
             </Link>
           </div>
         </div>

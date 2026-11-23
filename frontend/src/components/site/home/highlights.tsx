@@ -11,7 +11,7 @@ const facts = [
 
 export function Highlights() {
   return (
-    <section aria-label="Fernway in numbers" className="relative z-10 flow-root bg-beige">
+    <section aria-label="Lindenway Bank in numbers" className="relative z-10 flow-root bg-beige">
       <div className="site-container">
         <ul className="reveal -mt-10 grid bg-white shadow-[0_25px_60px_rgb(26_28_35/0.08)] sm:grid-cols-2 lg:-mt-[60px] lg:grid-cols-4">
           {facts.map((fact) => (

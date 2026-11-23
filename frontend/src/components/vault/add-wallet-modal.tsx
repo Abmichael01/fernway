@@ -267,7 +267,7 @@ export function AddWalletModal({ open, onOpenChange, onWalletCreated }: AddWalle
                 <span>Write Down Secret Recovery Phrase</span>
               </div>
               <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                Do not share this phrase with anyone. Store it safely offline. Fernway Vault cannot recover lost phrases.
+                Do not share this phrase with anyone. Store it safely offline. Lindenway Vault cannot recover lost phrases.
               </p>
             </div>
 

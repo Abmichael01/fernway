@@ -22,8 +22,11 @@ ENV NODE_ENV=production
 RUN pnpm build
 
 # -- Stage 3: Production runtime --
-FROM base AS runner
+FROM node:22-alpine AS runner
+WORKDIR /app
+
 ENV NODE_ENV=production \
+    NEXT_TELEMETRY_DISABLED=1 \
     PORT=3000 \
     HOSTNAME=0.0.0.0
 
@@ -35,4 +38,4 @@ COPY --from=builder /app/node_modules ./node_modules
 
 EXPOSE 3000
 
-CMD ["pnpm", "exec", "next", "start", "-H", "0.0.0.0", "-p", "3000"]
+CMD ["node", "node_modules/next/dist/bin/next", "start", "-H", "0.0.0.0", "-p", "3000"]
